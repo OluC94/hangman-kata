@@ -16,21 +16,21 @@ test("no guessed letters", () => {
     expect(generateHangmanLetters(guessedLetters, wordToGuess)).toEqual(result);
 });
 
-test("input with some correct letters", () => {
+test("input with some capital letters", () => {
     const guessedLetters = ["G", "f", "h", "P"];
     const wordToGuess = "frogs";
     const result = ["f", "_", "_", "g", "_"]
     expect(generateHangmanLetters(guessedLetters, wordToGuess)).toEqual(result);
 });
 
-test("input with some correct letters", () => {
+test("input with some double letters", () => {
     const guessedLetters = ["g", "e", "y", "s", "m"];
     const wordToGuess = "speed";
     const result = ["s", "_", "e", "e", "_"]
     expect(generateHangmanLetters(guessedLetters, wordToGuess)).toEqual(result);
 });
 
-test("input with some correct letters", () => {
+test("input with all correct letters", () => {
     const guessedLetters = ["t", "g", "l", "u", "o", "a"];
     const wordToGuess = "total";
     const result = ["t", "o", "t", "a", "l"]
